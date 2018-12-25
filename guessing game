@@ -1,0 +1,15 @@
+import random
+
+secret = random.randrange(0, 100)
+
+guess = 0
+while guess != secret:
+    guess = int(input("Make a guess: "))
+
+    if guess > secret:
+       print("TOO HIGH!")
+    elif guess < secret:
+       print("TOO LOW!")
+    else:
+       print("YOU GOT IT!")
+
